@@ -9,9 +9,11 @@
 <body>
     <!-- Navigation -->
     <hr>
-    <a href="index.html" >Home</a> |
-    <a href="Contact.html" target="_blank">Contact</a> |
-    <a href="Gallery.html" target="_blank">Gallery</a>
+    <table style="text-align: center;">
+        <a href="index.html" >Home</a> &nbsp;|&nbsp;
+        <a href="Contact.html" target="_blank">Contact</a> &nbsp;|&nbsp;
+        <a href="Gallery.html" target="_blank">Gallery</a>
+    </table>
 
     <hr>
      <!-- This is thte first step -->
@@ -22,30 +24,70 @@
             </td>
             <td>
                 <h1>Amsale Geberehana</h1>
-    <h3>Student, Addis Ababa University</h3>
-    <p>My name is Amsale. i am a student, i am studing <strong>software</strong> in Addis Ababa Institute of technology</p>
+                <h3>Student, Addis Ababa University</h3>
+   
             </td>
         </tr>
     </table>
    
 <!-- Contact form -->
     <hr>
-    <h3>Leave your comment here</h3>
-
+    
     <form method="POST" action="malito:se.amsale.gebrehana@gmil.com" enctype="utf-8">
-        <table>
+
+
+        <table style="margin-right: 250px;" align="right">
             <tr>
-                <td><label for="fname">First Name</label></td>
-                <td> <input type="text" name="fname" id="fname" placeholder="First Name">
-                    <br></td>
+                <td>
+                    <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa%20Institute%20of%20Technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+                </td>
             </tr>
-                <tr><td> <label for="lname">Last Name</label></td>
-                    <td> <input type="text" name="lname" id="lname" placeholder="Last Name">
-                        <br></td>
+        </table>
+       
+
+        <table style="margin-left: 50px;">
+            <tr>
+                <td>
+                    <h3>Leave your comment here</h3>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fname">First Name </label></td>
+                <td> 
+                    <input type="text" name="fname" id="fname" placeholder="First Name" pattern="[A-Za-z]" autofocus   required>
+                    
+                </td>
+            </tr>
+            
+                <tr>
+                    <td> 
+                         <label for="lname">Last Name </label>
+                    </td>
+                    <td> 
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" pattern="[A-Za-z]" required title="Fill this">
+                        
+                    </td>
                 </tr>
-                <tr> <td><label for="email">Email: </label></td>
-                    <td><input type="email" name="email" id="email" >
-                    <br></td></tr>
+                <tr> 
+                    <td>
+                        <label for="passwowrd">Password: </label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password" pattern="[A-Za-z\d\.\*\S]{8,12}" 
+                            title="Passoword must be between 8 and 12 characters " required >
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <label for="email">Email: </label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" required>
+                    </td>
+                </tr>
                 <tr>
                     <td>
                         <label for="country">Country</label>
@@ -64,23 +106,29 @@
                         <label for="start">Date:</label>
                     </td>
                     <td>
-                        <input type="date" id="start" name="trip-start"
+                        <input type="date" id="start" min="2020-03-03"
         >
                     </td>
                 </tr>
-        
-        </table>
-        
-        
-        <br>
-        <br>
-        <label for="detail">What do you say?</label>
-        <br>
-        <textarea name="detail" id="detail" placeholder="Write something.." style="height:170px"></textarea>
-        <br><br>
-       
-        <input type="submit" value="submit">        
 
+                <tr>
+                    <td>
+                        <label for="detail">What do you say?</label>
+                    </td>
+            
+                   </tr> 
+                   <tr>
+                       <td>
+                        <textarea name="detail" id="detail" placeholder="Write something.." style="height:170px"></textarea>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                        <input type="submit" value="submit">        
+            
+                       </td>
+                   </tr>
+        </table>
     </form>
 
 
