@@ -9,15 +9,25 @@
 <body>
     <!-- Navigation -->
     <hr>
-    <table style="text-align: center;">
-        <a href="index.html" >Home</a> &nbsp;|&nbsp;
-        <a href="Contact.html" target="_blank">Contact</a> &nbsp;|&nbsp;
-        <a href="Gallery.html" target="_blank">Gallery</a>
+    <table align="center" cellspacing="10">
+        <tr>
+            <td>
+                <h3><a href="index.html" >Home</a> &nbsp;|&nbsp;</h3>
+            </td>
+            <td>
+                <h3><a href="Contact.html" target="_blank">Contact</a> &nbsp;|&nbsp;</h3>
+            </td>
+            <td>      
+                <h3><a href="Gallery.html" target="_blank">Gallery</a></h3>
+            </td>
+        </tr>
+       
+      
     </table>
 
     <hr>
      <!-- This is thte first step -->
-    <table>
+    <table cellspacing="20" align="center">
         <tr>
             <td>
                 <img src="./asset/image/img.PNG" alt="Amsale Gebrehana profile image" width="200">
@@ -46,7 +56,7 @@
         </table>
        
 
-        <table style="margin-left: 50px;">
+        <table style="margin-left: 50px;" cellspacing = "10">
             <tr>
                 <td>
                     <h3>Leave your comment here</h3>
@@ -57,87 +67,98 @@
                 <td>
                     <label for="fname">First Name </label></td>
                 <td> 
-                    <input type="text" name="fname" id="fname" placeholder="First Name" pattern="[A-Za-z]" autofocus   required>
+                    <input type="text" id="fname" name="name" required placeholder="First Name"
+                    pattern="[A-Za-z]{1,15}" title="1 to 15 letters">
                     
                 </td>
             </tr>
             
-                <tr>
-                    <td> 
-                         <label for="lname">Last Name </label>
-                    </td>
-                    <td> 
-                        <input type="text" name="lname" id="lname" placeholder="Last Name" pattern="[A-Za-z]" required title="Fill this">
-                        
-                    </td>
-                </tr>
-                <tr> 
-                    <td>
-                        <label for="passwowrd">Password: </label>
-                    </td>
-                    <td>
-                        <input type="password" name="password" id="password" pattern="[A-Za-z\d\.\*\S]{8,12}" 
-                            title="Passoword must be between 8 and 12 characters " required >
-                    </td>
-                </tr>
-                <tr> 
-                    <td>
-                        <label for="email">Email: </label>
-                    </td>
-                    <td>
-                        <input type="email" name="email" id="email" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="country">Country</label>
-                    </td>
-                    <td>
-                        <select name="contry" id="country">
-                            <option value="et">Ethiopia</option>
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="start">Date:</label>
-                    </td>
-                    <td>
-                        <input type="date" id="start" min="2020-03-03"
-        >
-                    </td>
-                </tr>
+            <tr>
+                <td> 
+                        <label for="lname">Last Name </label>
+                </td>
+                <td> 
+                    <input type="text" id="lname" name="lname" required placeholder="Last Name"
+                    pattern="[A-Za-z]{1,15}" title="1 to 15 letters">
+                    
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    <label for="passwowrd">Password: </label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password" pattern="[A-Za-z\d\.\*\S]{8,12}" 
+                        title="Passoword must be between 8 and 12 characters " required >
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    <label for="phone no.">Phone no.: </label>
+                </td>
+                <td>
+                    <input type="tel" name="phone no." id="phone no." pattern="[\d]{10}" 
+                        title="Phone number must be 10 digits" required >
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    <label for="email">Email: </label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="country">Country</label>
+                </td>
+                <td>
+                    <select name="contry" id="country">
+                        <option value="et">Ethiopia</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="start">Date:</label>
+                </td>
+                <td>
+                    <input type="date" id="start" min="2020-03-03"
+    >
+                </td>
+            </tr>
 
-                <tr>
-                    <td>
-                        <label for="detail">What do you say?</label>
-                    </td>
-            
-                   </tr> 
-                   <tr>
-                       <td>
-                        <textarea name="detail" id="detail" placeholder="Write something.." style="height:170px"></textarea>
-                       </td>
-                   </tr>
-                   <tr>
-                       <td>
-                        <input type="submit" value="submit">        
-            
-                       </td>
-                   </tr>
+            <tr>
+                <td>
+                    <label for="detail">What do you say?</label>
+                </td>
+    
+            </tr> 
+            <tr>
+                <td>
+                <textarea name="detail" id="detail" placeholder="Write something.." style="height:170px"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="submit">        
+                
+                </td>
+            </tr>
         </table>
     </form>
 
 
     <hr>
     <a href="https://www.telegram.com">Telegram</a>
-    <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+    <a href="https://www.facebook.com">Facebook</a>
 
 
     <hr>
-    <p align="center" > Developed by Amsale G.</p>
+    <p align="center" > Developed by Amsale G.&copy;</p>
 </body>
 </html>
